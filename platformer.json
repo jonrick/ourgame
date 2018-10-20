@@ -1163,7 +1163,7 @@
           "name": "Platform",
           "width": 0,
           "x": 194,
-          "y": 497.569,
+          "y": 499.569,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -1238,7 +1238,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Clouds",
           "locked": false,
           "name": "Cloud",
           "width": 0,
@@ -1258,7 +1258,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Clouds",
           "locked": false,
           "name": "Cloud",
           "width": 0,
@@ -1273,7 +1273,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Clouds",
           "locked": false,
           "name": "Cloud",
           "width": 0,
@@ -1293,7 +1293,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Clouds",
           "locked": false,
           "name": "Cloud",
           "width": 0,
@@ -1313,7 +1313,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Clouds",
           "locked": false,
           "name": "Cloud",
           "width": 0,
@@ -1328,7 +1328,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Clouds",
           "locked": false,
           "name": "Cloud",
           "width": 0,
@@ -1348,7 +1348,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Clouds",
           "locked": false,
           "name": "Cloud",
           "width": 0,
@@ -1368,7 +1368,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Clouds",
           "locked": false,
           "name": "Cloud",
           "width": 0,
@@ -1383,7 +1383,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Background",
           "locked": false,
           "name": "BackgroundObjects",
           "width": 0,
@@ -1423,7 +1423,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Background",
           "locked": false,
           "name": "BackgroundObjects",
           "width": 0,
@@ -1453,7 +1453,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Background",
           "locked": false,
           "name": "BackgroundObjects",
           "width": 0,
@@ -1468,7 +1468,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Background",
           "locked": false,
           "name": "BackgroundObjects",
           "width": 0,
@@ -1483,7 +1483,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Background",
           "locked": false,
           "name": "BackgroundObjects",
           "width": 0,
@@ -1554,26 +1554,6 @@
             {
               "name": "animation",
               "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "BackgroundObjects",
-          "width": 0,
-          "x": -43,
-          "y": 501,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
             }
           ],
           "stringProperties": [],
@@ -2107,66 +2087,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
-          "layer": "",
-          "locked": false,
-          "name": "Grass",
-          "width": 587,
-          "x": -583,
-          "y": 571,
-          "zOrder": 31,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Title1",
-          "width": 0,
-          "x": -276.26,
-          "y": 240.995,
-          "zOrder": 33,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 188,
-          "layer": "",
-          "locked": false,
-          "name": "Title1",
-          "width": 513,
-          "x": -523,
-          "y": 252,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 191,
-          "layer": "",
-          "locked": false,
-          "name": "Title2",
-          "width": 513,
-          "x": 1031,
-          "y": 314,
-          "zOrder": 36,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 220,
           "layer": "",
           "locked": false,
@@ -2206,6 +2126,181 @@
           "y": 473,
           "zOrder": 40,
           "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Title2",
+          "width": 0,
+          "x": 1572.06,
+          "y": 279.803,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "locked": false,
+          "name": "BackgroundObjects",
+          "width": 0,
+          "x": -166,
+          "y": 500,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "locked": false,
+          "name": "BackgroundObjects",
+          "width": 0,
+          "x": 68,
+          "y": 499,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "locked": false,
+          "name": "BackgroundObjects",
+          "width": 0,
+          "x": 230,
+          "y": 500,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "locked": false,
+          "name": "BackgroundObjects",
+          "width": 0,
+          "x": -71,
+          "y": 500,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "Background",
+          "locked": false,
+          "name": "BackgroundObjects",
+          "width": 81,
+          "x": -60,
+          "y": 489,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "locked": false,
+          "name": "BackgroundObjects",
+          "width": 0,
+          "x": 367,
+          "y": 500,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "locked": false,
+          "name": "BackgroundObjects",
+          "width": 0,
+          "x": 1293,
+          "y": 503,
+          "zOrder": -1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "locked": false,
+          "name": "BackgroundObjects",
+          "width": 0,
+          "x": 1577,
+          "y": 505,
+          "zOrder": -1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -4590,42 +4685,6 @@
         },
         {
           "height": 32,
-          "name": "Grass",
-          "texture": "Image-1.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "height": 100,
-          "name": "Title1",
-          "texture": "titlescreen1.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 100,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "height": 100,
-          "name": "Title2",
-          "texture": "titlescreen2.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 100,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "height": 100,
-          "name": "Title3",
-          "texture": "titlescreen3.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 100,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "height": 32,
           "name": "NewObject",
           "texture": "",
           "type": "TiledSpriteObject::TiledSprite",
@@ -5582,9 +5641,71 @@
             }
           ],
           "events": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Paralax Camera",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CameraX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "PlayerHitBox.X()*0.7",
+                "\"Background\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CameraX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "PlayerHitBox.X()*0.15",
+                "\"Clouds\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
+        {
+          "name": "Clouds",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "Background",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
         {
           "name": "",
           "visibility": true,
@@ -5604,7 +5725,7 @@
         },
         {
           "name": "GUI",
-          "visibility": true,
+          "visibility": false,
           "cameras": [
             {
               "defaultSize": true,
@@ -11647,7 +11768,7 @@
       ]
     },
     {
-      "associatedLayout": "New scene",
+      "associatedLayout": "El Camino High",
       "lastChangeTimeStamp": 1383151997,
       "name": "GUIManagement",
       "events": [
