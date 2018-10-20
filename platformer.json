@@ -12,7 +12,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.platformer",
-    "projectFile": "C:\\Users\\rick\\GDevelop projects\\My project2\\platformer.json",
+    "projectFile": "/Users/Home/Documents/ourgame/platformer.json",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -2178,6 +2178,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 92,
+          "layer": "",
+          "locked": false,
+          "name": "NPCHitBox",
+          "width": 81,
+          "x": 976,
+          "y": 330,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3276,6 +3291,79 @@
               "deceleration": 1500,
               "gravity": 1300,
               "ignoreDefaultControls": false,
+              "jumpSpeed": 1000,
+              "maxFallingSpeed": 1000,
+              "maxSpeed": 250,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 0,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PlayerArea.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NPCHitBox",
+          "type": "Sprite",
+          "updateIfNotVisible": true,
+          "variables": [],
+          "behaviors": [
+            {
+              "acceleration": 1500,
+              "canGrabPlatforms": false,
+              "deceleration": 1500,
+              "gravity": 1300,
+              "ignoreDefaultControls": true,
               "jumpSpeed": 1000,
               "maxFallingSpeed": 1000,
               "maxSpeed": 250,
@@ -4485,6 +4573,16 @@
                 "PlayerHitBox"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "NPCHitBox"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -4506,6 +4604,20 @@
                 "PlayerHitBox.X()",
                 "=",
                 "PlayerHitBox.Y()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "=",
+                "NPCHitBox.X()",
+                "=",
+                "NPCHitBox.Y()"
               ],
               "subInstructions": []
             }
@@ -6344,7 +6456,7 @@
               },
               "parameters": [
                 "PlayerHitBox",
-                "Player2_Bri",
+                "NPCHitBox",
                 "",
                 ""
               ],
@@ -6370,10 +6482,10 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "Player2_Bri",
-                "",
+                "NPCHitBox",
+                "=",
                 "PlayerHitBox.X()-60",
-                "",
+                "=",
                 "PlayerHitBox.Y()"
               ],
               "subInstructions": []
