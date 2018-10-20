@@ -6213,12 +6213,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "TextObject::Opacity"
+                "value": "Opacity"
               },
               "parameters": [
                 "Poop",
                 "=",
-                "254\n"
+                "254"
               ],
               "subInstructions": []
             },
