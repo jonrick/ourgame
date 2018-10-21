@@ -773,7 +773,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "../../Desktop/OurGame Source Art/echs-sky.png",
+        "file": "echs-sky.png",
         "kind": "image",
         "name": "echs-sky.png",
         "smoothed": true,
