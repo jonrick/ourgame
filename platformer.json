@@ -12,7 +12,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.platformer",
-    "projectFile": "C:\\Users\\rick\\GDevelop projects\\ourgame-master\\platformer.json",
+    "projectFile": "/Users/Home/Documents/ourgame/platformer.json",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -762,6 +762,14 @@
         "name": "NPC_Mac-4.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "echs-1.png",
+        "kind": "image",
+        "name": "echs-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1264,30 +1272,10 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "Platform",
-          "width": 0,
-          "x": 194,
-          "y": 499.569,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
           "name": "SlimeWalk",
           "width": 0,
-          "x": 687.677,
-          "y": 527.461,
+          "x": 1006,
+          "y": 527,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1301,8 +1289,8 @@
           "locked": false,
           "name": "SlimeWalk",
           "width": 0,
-          "x": 286.2,
-          "y": 528.461,
+          "x": 1144,
+          "y": 515,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -2121,24 +2109,9 @@
           "locked": false,
           "name": "Player2_Bri",
           "width": 0,
-          "x": 995,
-          "y": 480,
+          "x": 627,
+          "y": 472,
           "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 53,
-          "layer": "",
-          "locked": false,
-          "name": "Poop",
-          "width": 70,
-          "x": 1111,
-          "y": 515,
-          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2211,8 +2184,8 @@
           "locked": false,
           "name": "NPCHitBox",
           "width": 81,
-          "x": 976,
-          "y": 330,
+          "x": 622,
+          "y": 468,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -2434,6 +2407,21 @@
           "x": 1469,
           "y": 476,
           "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 455,
+          "layer": "",
+          "locked": false,
+          "name": "ElCaminoHigh",
+          "width": 607,
+          "x": -21,
+          "y": 116,
+          "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5340,13 +5328,42 @@
           ]
         },
         {
-          "height": 32,
-          "name": "NewObject",
-          "texture": "",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
+          "name": "ElCaminoHigh",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
           "variables": [],
-          "behaviors": []
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "echs-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
