@@ -904,7 +904,20 @@
   },
   "objects": [],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "GlobalHearts",
+      "value": ""
+    },
+    {
+      "name": "GlobalCoins",
+      "value": ""
+    },
+    {
+      "name": "GlobalPoop",
+      "value": ""
+    }
+  ],
   "layouts": [
     {
       "b": 247,
@@ -1015,36 +1028,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "GUI",
-          "locked": false,
-          "name": "Score",
-          "width": 0,
-          "x": 66,
-          "y": 4,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "GUI",
-          "locked": false,
-          "name": "Score_CoinIcon",
-          "width": 0,
-          "x": 21,
-          "y": 11,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "height": 78.2958,
           "layer": "GUI",
@@ -1114,21 +1097,6 @@
           "x": 726,
           "y": 476,
           "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "GUI",
-          "locked": false,
-          "name": "PoopScore",
-          "width": 0,
-          "x": 743,
-          "y": 8,
-          "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1401,8 +1369,8 @@
           "locked": false,
           "name": "SunsetCloud1",
           "width": 0,
-          "x": -63,
-          "y": 15,
+          "x": -120,
+          "y": -23,
           "zOrder": 46,
           "numberProperties": [],
           "stringProperties": [],
@@ -1929,11 +1897,11 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "Score_Heart",
+          "name": "Meat",
           "width": 0,
-          "x": 1240.48,
-          "y": 561.128,
-          "zOrder": 62,
+          "x": 1062.59,
+          "y": 730.196,
+          "zOrder": 63,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1944,11 +1912,236 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "Meat",
+          "name": "Score_Heart",
           "width": 0,
-          "x": 1062.59,
-          "y": 730.196,
-          "zOrder": 63,
+          "x": 956.766,
+          "y": 533.002,
+          "zOrder": 64,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Heart",
+          "width": 0,
+          "x": 857,
+          "y": 530,
+          "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Heart",
+          "width": 0,
+          "x": 415,
+          "y": 535,
+          "zOrder": 66,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Poop",
+          "width": 0,
+          "x": 2301,
+          "y": 525,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Poop",
+          "width": 0,
+          "x": 2595,
+          "y": 526,
+          "zOrder": 68,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Poop",
+          "width": 0,
+          "x": 3002,
+          "y": 527,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Heart",
+          "width": 0,
+          "x": -125,
+          "y": 535,
+          "zOrder": 66,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Coin",
+          "width": 0,
+          "x": 1354,
+          "y": 535,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Coin",
+          "width": 0,
+          "x": 1575,
+          "y": 530,
+          "zOrder": 71,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Score_Coin",
+          "width": 0,
+          "x": 1874,
+          "y": 534,
+          "zOrder": 72,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GUI",
+          "locked": false,
+          "name": "Coin_Score",
+          "width": 0,
+          "x": 373,
+          "y": 5,
+          "zOrder": 73,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GUI",
+          "locked": false,
+          "name": "Poop_Score",
+          "width": 0,
+          "x": 745,
+          "y": 5,
+          "zOrder": 74,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GUI",
+          "locked": false,
+          "name": "Heart_Score",
+          "width": 0,
+          "x": 51,
+          "y": 5,
+          "zOrder": 76,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GUI",
+          "locked": false,
+          "name": "Score_Heart",
+          "width": 0,
+          "x": 10,
+          "y": 10,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GUI",
+          "locked": false,
+          "name": "Score_Coin",
+          "width": 0,
+          "x": 334.907,
+          "y": 10,
+          "zOrder": 78,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GUI",
+          "locked": false,
+          "name": "Score_Poop",
+          "width": 0,
+          "x": 696.372,
+          "y": 10,
+          "zOrder": 79,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4563,16 +4756,11 @@
         {
           "bold": false,
           "italic": false,
-          "name": "PoopScore",
+          "name": "Heart_Score",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
-          "variables": [
-            {
-              "name": "PoopScore",
-              "value": ""
-            }
-          ],
+          "variables": [],
           "behaviors": [],
           "string": "x 0",
           "font": "Bimbo_JVE.ttf",
@@ -4586,11 +4774,34 @@
         {
           "bold": false,
           "italic": false,
-          "name": "Score",
+          "name": "Coin_Score",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
+          "behaviors": [],
+          "string": "x 0",
+          "font": "Bimbo_JVE.ttf",
+          "characterSize": 40,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Poop_Score",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "PoopScore",
+              "value": ""
+            }
+          ],
           "behaviors": [],
           "string": "x 0",
           "font": "Bimbo_JVE.ttf",
@@ -6552,7 +6763,7 @@
         },
         {
           "name": "GUI",
-          "visibility": false,
+          "visibility": true,
           "cameras": [
             {
               "defaultSize": true,
@@ -12198,10 +12409,10 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
+                "value": "ModVarGlobal"
               },
               "parameters": [
-                "Score",
+                "GlobalCoins",
                 "+",
                 "100"
               ],
@@ -12352,12 +12563,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
+                "value": "ModVarGlobal"
               },
               "parameters": [
-                "PoopScore",
+                "GlobalPoop",
                 "+",
-                "100"
+                "200"
               ],
               "subInstructions": []
             }
@@ -12403,7 +12614,7 @@
               "parameters": [
                 "Score_Poop",
                 "0",
-                "-30",
+                "+10",
                 "2"
               ],
               "subInstructions": []
@@ -12437,6 +12648,160 @@
               },
               "parameters": [
                 "Score_Poop",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Manage hearts",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "Score_Heart",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Score_Heart",
+                "=",
+                "255"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Score_Heart",
+                "=",
+                "254"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "GlobalHearts",
+                "+",
+                "300"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Score_Heart",
+                "<",
+                "255"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Score_Heart",
+                "-",
+                "255*TimeDelta()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Score_Heart",
+                "0",
+                "-30",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Score_Heart",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "Score_Heart",
                 ""
               ],
               "subInstructions": []
@@ -12632,9 +12997,9 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "Score",
+                "Heart_Score",
                 "=",
-                "\"x \"+ToString(Variable(Score))"
+                "\"x \"+ToString(GlobalVariable(GlobalHearts))"
               ],
               "subInstructions": []
             },
@@ -12644,9 +13009,21 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "PoopScore",
+                "Coin_Score",
                 "=",
-                "\"x \"+ToString(Variable(PoopScore))"
+                "\"x \"+ToString(GlobalVariable(GlobalCoins))"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Poop_Score",
+                "=",
+                "\"x \"+ToString(GlobalVariable(GlobalPoop))"
               ],
               "subInstructions": []
             }
