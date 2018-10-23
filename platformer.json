@@ -12,7 +12,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.platformer",
-    "projectFile": "C:\\Users\\rick\\GDevelop projects\\ourgame-master\\platformer.json",
+    "projectFile": "/Users/Home/Documents/ourgame/platformer.json",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -1257,6 +1257,64 @@
         "metadata": "",
         "name": "hospital.png",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "music/echs.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/echs.mp3",
+        "userAdded": true
+      },
+      {
+        "file": "music/houses.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/houses.mp3",
+        "userAdded": true
+      },
+      {
+        "file": "music/city.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/city.mp3",
+        "userAdded": true
+      },
+      {
+        "file": "music/hospital.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music/hospital.mp3",
+        "userAdded": true
+      },
+      {
+        "file": "sounds/npc_collect.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sounds/npc_collect.wav",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TriggerVolume.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TriggerVolume.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "sounds/poop_collect.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sounds/poop_collect.wav",
+        "userAdded": false
+      },
+      {
+        "file": "sounds/heart_collect.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sounds/heart_collect.wav",
         "userAdded": true
       }
     ],
@@ -2822,6 +2880,21 @@
           "x": 1270,
           "y": 535,
           "zOrder": 91,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "TriggerVolume",
+          "width": 0,
+          "x": 1199,
+          "y": 475,
+          "zOrder": 114,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4895,6 +4968,63 @@
           ]
         },
         {
+          "name": "TriggerVolume",
+          "type": "Sprite",
+          "updateIfNotVisible": true,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TriggerVolume.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Exit",
           "type": "Sprite",
           "updateIfNotVisible": true,
@@ -6724,6 +6854,30 @@
                 "NPCHitBoxBaby"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "TriggerVolume"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/echs.mp3",
+                "yes",
+                "",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -6773,6 +6927,54 @@
                 "NPCHitBoxBaby.X()",
                 "=",
                 "NPCHitBoxBaby.Y()"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "TriggerVolume",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "sounds/npc_collect.wav",
+                "no",
+                "100",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "TriggerVolume",
+                ""
               ],
               "subInstructions": []
             }
@@ -11905,6 +12107,20 @@
               },
               "parameters": [
                 "NPCHitBox"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/houses.mp3",
+                "yes",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -18511,6 +18727,20 @@
               },
               "parameters": [
                 "NPCHitBoxBaby"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/houses.mp3",
+                "yes",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -25841,6 +26071,20 @@
                 "NPCHitBoxBaby"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/city.mp3",
+                "yes",
+                "",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -27553,12 +27797,12 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 92,
           "layer": "",
           "locked": false,
           "name": "NPCHitBoxBaby",
-          "width": 0,
+          "width": 71,
           "x": 585,
           "y": 431,
           "zOrder": 134,
@@ -27667,6 +27911,21 @@
           "x": 1250,
           "y": 482,
           "zOrder": 136,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "TriggerVolume",
+          "width": 0,
+          "x": 572,
+          "y": 435,
+          "zOrder": 137,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -29635,6 +29894,63 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "PlayerArea.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 0,
+                            "y": 0
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TriggerVolume",
+          "type": "Sprite",
+          "updateIfNotVisible": true,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TriggerVolume.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -32215,6 +32531,78 @@
               },
               "parameters": [
                 "NPCHitBoxBaby"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/hospital.mp3",
+                "yes",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "TriggerVolume"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "PlayerHitBox",
+                "TriggerVolume",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "sounds/npc_collect.wav",
+                "no",
+                "100",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "TriggerVolume",
+                ""
               ],
               "subInstructions": []
             }
@@ -34851,12 +35239,12 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 92,
           "layer": "",
           "locked": false,
           "name": "NPCHitBoxBaby",
-          "width": 0,
+          "width": 73,
           "x": -388,
           "y": 464,
           "zOrder": 121,
@@ -39099,6 +39487,20 @@
                 "NPCHitBoxBaby"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/houses.mp3",
+                "yes",
+                "",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -41057,6 +41459,20 @@
             {
               "type": {
                 "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "sounds/poop_collect.wav",
+                "no",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -41205,6 +41621,20 @@
                 "Score_Heart",
                 "=",
                 "254"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "sounds/heart_collect.wav",
+                "no",
+                "",
+                ""
               ],
               "subInstructions": []
             },
@@ -41415,7 +41845,7 @@
               },
               "parameters": [
                 "",
-                "Player2_Bri",
+                "Player1_Jon",
                 "Player3_Baby"
               ],
               "subInstructions": []
