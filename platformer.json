@@ -7,6 +7,7 @@
     "revision": 0
   },
   "properties": {
+    "adMobAppId": "",
     "folderProject": false,
     "linuxExecutableFilename": "",
     "macExecutableFilename": "",
@@ -1461,6 +1462,468 @@
     }
   ],
   "layouts": [
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "GameLoad",
+      "name": "GameLoad",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 1
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "black",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": -100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Year",
+          "width": 0,
+          "x": 255.812,
+          "y": 258,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "year",
+          "width": 0,
+          "x": 34,
+          "y": 242,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "black",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "black.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bri",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Player2_Bri-2-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jon",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Player1_Jon-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "year",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Loading...\n\nOn Desktop\nUse SPACE AND ARROW KEYS\n\nOn Mobile\nUse on screen buttons",
+          "font": "ka1.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Start",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeScaleWidth"
+              },
+              "parameters": [
+                "black",
+                "=",
+                "SceneWindowWidth()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeScaleHeight"
+              },
+              "parameters": [
+                "black",
+                "=",
+                "SceneWindowHeight()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Jon",
+                "=",
+                "(SceneWindowWidth() / 2) -(25*2)",
+                "=",
+                "(SceneWindowHeight() / 2) -(17*2)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "year",
+                "=",
+                "(SceneWindowWidth() / 2) - year.Width()/2",
+                "=",
+                "(SceneWindowHeight() / 2) - ((year.Height()/2))"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Wait\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/menu.mp3",
+                "no",
+                "0",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/echs.mp3",
+                "no",
+                "0",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/houses.mp3",
+                "no",
+                "0",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/city.mp3",
+                "no",
+                "0",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "music/hospital.mp3",
+                "no",
+                "0",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "8",
+                "\"Wait\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Start Menu\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "",
+          "comment2": ""
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
     {
       "b": 247,
       "disableInputWhenNotFocused": true,
@@ -7259,6 +7722,16 @@
             {
               "type": {
                 "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Player1_Jon"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "PlayMusic"
               },
               "parameters": [
@@ -7267,16 +7740,6 @@
                 "yes",
                 "",
                 ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "Player1_Jon"
               ],
               "subInstructions": []
             }
@@ -7318,105 +7781,6 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Player1_Jon",
-                "=",
-                "PlayerHitBox.X()",
-                "=",
-                "PlayerHitBox.Y()"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Player2_Bri",
-                "=",
-                "NPCHitBox.X()",
-                "=",
-                "NPCHitBox.Y()"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Player3_Baby",
-                "=",
-                "NPCHitBoxBaby.X()",
-                "=",
-                "NPCHitBoxBaby.Y()"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "PlayerHitBox",
-                "TriggerVolume",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "sounds/npc_collect.wav",
-                "no",
-                "100",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Delete"
-              },
-              "parameters": [
-                "TriggerVolume",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -7431,203 +7795,9 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "RShift"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Animation"
-                  },
-                  "parameters": [
-                    "Player1_Jon",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Animation"
-                  },
-                  "parameters": [
-                    "Player1_Jon",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "jump.wav",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlatformBehavior::IsJumping"
-              },
-              "parameters": [
-                "PlayerHitBox",
-                "PlatformerObject"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player1_Jon",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player2_Bri",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player3_Baby",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlatformBehavior::IsFalling"
-              },
-              "parameters": [
-                "PlayerHitBox",
-                "PlatformerObject"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player1_Jon",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player2_Bri",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player3_Baby",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlatformBehavior::IsOnFloor"
-              },
-              "parameters": [
-                "PlayerHitBox",
-                "PlatformerObject"
-              ],
-              "subInstructions": []
-            }
-          ],
+          "conditions": [],
           "actions": [],
           "events": [
             {
@@ -7749,114 +7919,6 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "FlipX"
-              },
-              "parameters": [
-                "Player1_Jon",
-                "yes"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "FlipX"
-              },
-              "parameters": [
-                "Player2_Bri",
-                "yes"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "FlipX"
-              },
-              "parameters": [
-                "Player3_Baby",
-                "yes"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Right"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "FlipX"
-              },
-              "parameters": [
-                "Player1_Jon",
-                "no"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "FlipX"
-              },
-              "parameters": [
-                "Player2_Bri",
-                "no"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "FlipX"
-              },
-              "parameters": [
-                "Player3_Baby",
-                "no"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -7906,136 +7968,6 @@
           },
           "comment": "Management of the moving platform:",
           "comment2": "Gestion de la plateforme bougeante:"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "GoLeft"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "GoRight"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "GoLeft",
-                "MovingPlatform",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Arreter"
-              },
-              "parameters": [
-                "MovingPlatform"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "AddForceXY"
-              },
-              "parameters": [
-                "MovingPlatform",
-                "-150",
-                "0",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "GoRight",
-                "MovingPlatform",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Arreter"
-              },
-              "parameters": [
-                "MovingPlatform"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "AddForceXY"
-              },
-              "parameters": [
-                "MovingPlatform",
-                "150",
-                "0",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         },
         {
           "disabled": false,
@@ -8206,11 +8138,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlatformBehavior::SimulateLeftKey"
+                "value": "Scene"
               },
               "parameters": [
-                "PlayerHitBox",
-                "PlatformerObject"
+                "",
+                "\"Transition00\"",
+                ""
               ],
               "subInstructions": []
             }
@@ -8240,11 +8173,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlatformBehavior::SimulateRightKey"
+                "value": "Scene"
               },
               "parameters": [
-                "PlayerHitBox",
-                "PlatformerObject"
+                "",
+                "\"Transition00\"",
+                ""
               ],
               "subInstructions": []
             }
@@ -8274,46 +8208,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlatformBehavior::SimulateJumpKey"
-              },
-              "parameters": [
-                "PlayerHitBox",
-                "PlatformerObject"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "PlayerHitBox",
-                "Exit",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
                 "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"Houses\"",
-                "yes"
+                "\"Transition00\"",
+                ""
               ],
               "subInstructions": []
             }
@@ -8935,18 +8835,18 @@
       "behaviorsSharedData": []
     },
     {
-      "b": 247,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "El_32Camino_32High",
       "name": "El Camino High",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 208,
+      "r": 0,
       "standardSortMethod": false,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 244,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -9050,7 +8950,7 @@
           "name": "LeftButton",
           "width": 97.5489,
           "x": 31,
-          "y": 450,
+          "y": 480,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -9065,23 +8965,8 @@
           "name": "RightButton",
           "width": 94.1152,
           "x": 142,
-          "y": 453,
+          "y": 480,
           "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 202.235,
-          "layer": "GUI",
-          "locked": false,
-          "name": "ArrowButtonsBg",
-          "width": 202.235,
-          "x": 34,
-          "y": 389,
-          "zOrder": -10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9725,7 +9610,7 @@
           "name": "BGObjEnd02",
           "width": 1427,
           "x": 3408,
-          "y": -221,
+          "y": -985,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -9739,39 +9624,24 @@
           "locked": false,
           "name": "BGObjEnd02",
           "width": 620,
-          "x": 3408,
-          "y": -220,
-          "zOrder": 0,
+          "x": -1692,
+          "y": -105,
+          "zOrder": 1000,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 787,
-          "layer": "",
-          "locked": false,
-          "name": "BGObjEnd02",
-          "width": 620,
-          "x": 3408,
-          "y": -221,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
+          "angle": 180,
           "customSize": true,
           "height": 788,
           "layer": "",
           "locked": false,
           "name": "BGObjEnd01",
           "width": 116,
-          "x": 3292,
-          "y": -221,
-          "zOrder": 1,
+          "x": -1079,
+          "y": -106,
+          "zOrder": 1000,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10807,6 +10677,66 @@
           "x": 3725,
           "y": 409,
           "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 788,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd01",
+          "width": 116,
+          "x": 3292,
+          "y": -221,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 788,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd01",
+          "width": 116,
+          "x": -1079,
+          "y": -810,
+          "zOrder": 1000,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 788,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd01",
+          "width": 116,
+          "x": 3290,
+          "y": -889,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 789,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd02",
+          "width": 1427,
+          "x": 3408,
+          "y": -221,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14582,7 +14512,7 @@
               },
               "parameters": [
                 "",
-                "RShift"
+                "Space"
               ],
               "subInstructions": []
             },
@@ -15289,6 +15219,17 @@
                 "VirtualControls"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "VirtualControls",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -15347,6 +15288,39 @@
             {
               "type": {
                 "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "PlatformBehavior::SimulateLeftKey"
               },
               "parameters": [
@@ -15381,6 +15355,39 @@
             {
               "type": {
                 "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "PlatformBehavior::SimulateRightKey"
               },
               "parameters": [
@@ -15409,9 +15416,56 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "jump.wav",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -16075,18 +16129,18 @@
       "behaviorsSharedData": []
     },
     {
-      "b": 247,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "Houses",
       "name": "Houses",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 208,
+      "r": 0,
       "standardSortMethod": false,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 244,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -16190,7 +16244,7 @@
           "name": "LeftButton",
           "width": 97.5489,
           "x": 31,
-          "y": 450,
+          "y": 480,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -16205,23 +16259,8 @@
           "name": "RightButton",
           "width": 94.1152,
           "x": 142,
-          "y": 453,
+          "y": 480,
           "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 202.235,
-          "layer": "GUI",
-          "locked": false,
-          "name": "ArrowButtonsBg",
-          "width": 202.235,
-          "x": 34,
-          "y": 389,
-          "zOrder": -10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -17822,6 +17861,36 @@
           "x": 3707,
           "y": 469,
           "zOrder": 135,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 788,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd01",
+          "width": 116,
+          "x": -952,
+          "y": -145,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 787,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd02",
+          "width": 620,
+          "x": -1556,
+          "y": -143,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -21745,7 +21814,7 @@
               },
               "parameters": [
                 "",
-                "RShift"
+                "Space"
               ],
               "subInstructions": []
             },
@@ -22378,35 +22447,15 @@
                 "VirtualControls"
               ],
               "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "DepartScene"
+                "value": "Delete"
               },
               "parameters": [
+                "VirtualControls",
                 ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TouchSimulateMouse"
-              },
-              "parameters": [
-                "",
-                "no"
               ],
               "subInstructions": []
             }
@@ -22433,6 +22482,39 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "yes"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -22470,6 +22552,39 @@
             {
               "type": {
                 "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "PlatformBehavior::SimulateRightKey"
               },
               "parameters": [
@@ -22498,9 +22613,56 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "jump.wav",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -22509,6 +22671,37 @@
               "parameters": [
                 "PlayerHitBox",
                 "PlatformerObject"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TouchSimulateMouse"
+              },
+              "parameters": [
+                "",
+                "no"
               ],
               "subInstructions": []
             }
@@ -23164,18 +23357,18 @@
       "behaviorsSharedData": []
     },
     {
-      "b": 247,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "City",
       "name": "City",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 208,
+      "r": 0,
       "standardSortMethod": false,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 244,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -23276,7 +23469,7 @@
           "name": "LeftButton",
           "width": 97.5489,
           "x": 31,
-          "y": 450,
+          "y": 480,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -23291,23 +23484,8 @@
           "name": "RightButton",
           "width": 94.1152,
           "x": 142,
-          "y": 453,
+          "y": 480,
           "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 202.235,
-          "layer": "GUI",
-          "locked": false,
-          "name": "ArrowButtonsBg",
-          "width": 202.235,
-          "x": 34,
-          "y": 389,
-          "zOrder": -10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -23620,36 +23798,6 @@
           "locked": false,
           "name": "BGObjEnd02",
           "width": 963,
-          "x": 3408,
-          "y": -221,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 787,
-          "layer": "",
-          "locked": false,
-          "name": "BGObjEnd02",
-          "width": 620,
-          "x": 3408,
-          "y": -220,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 787,
-          "layer": "",
-          "locked": false,
-          "name": "BGObjEnd02",
-          "width": 620,
           "x": 3408,
           "y": -221,
           "zOrder": 0,
@@ -24883,6 +25031,36 @@
           "x": 3672,
           "y": 316,
           "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 789,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd02",
+          "width": 963,
+          "x": -1892,
+          "y": -111,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 788,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd01",
+          "width": 116,
+          "x": -938,
+          "y": -109,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -28888,7 +29066,7 @@
               },
               "parameters": [
                 "",
-                "RShift"
+                "Space"
               ],
               "subInstructions": []
             },
@@ -29521,35 +29699,15 @@
                 "VirtualControls"
               ],
               "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "DepartScene"
+                "value": "Delete"
               },
               "parameters": [
+                "VirtualControls",
                 ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TouchSimulateMouse"
-              },
-              "parameters": [
-                "",
-                "no"
               ],
               "subInstructions": []
             }
@@ -29576,6 +29734,39 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "yes"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -29613,6 +29804,39 @@
             {
               "type": {
                 "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "PlatformBehavior::SimulateRightKey"
               },
               "parameters": [
@@ -29641,9 +29865,56 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "jump.wav",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -29652,6 +29923,37 @@
               "parameters": [
                 "PlayerHitBox",
                 "PlatformerObject"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TouchSimulateMouse"
+              },
+              "parameters": [
+                "",
+                "no"
               ],
               "subInstructions": []
             }
@@ -30307,18 +30609,18 @@
       "behaviorsSharedData": []
     },
     {
-      "b": 247,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "Hospital",
       "name": "Hospital",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 208,
+      "r": 0,
       "standardSortMethod": false,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 244,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -30415,7 +30717,7 @@
           "name": "LeftButton",
           "width": 97.5489,
           "x": 31,
-          "y": 450,
+          "y": 480,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -30430,23 +30732,8 @@
           "name": "RightButton",
           "width": 94.1152,
           "x": 142,
-          "y": 453,
+          "y": 480,
           "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 202.235,
-          "layer": "GUI",
-          "locked": false,
-          "name": "ArrowButtonsBg",
-          "width": 202.235,
-          "x": 34,
-          "y": 389,
-          "zOrder": -10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -30594,23 +30881,23 @@
           "locked": false,
           "name": "BGObjEnd02",
           "width": 816,
-          "x": 1491,
-          "y": -188,
+          "x": -1687,
+          "y": -95,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 180,
           "customSize": true,
           "height": 788,
           "layer": "",
           "locked": false,
           "name": "BGObjEnd01",
           "width": 116,
-          "x": 1375,
-          "y": -189,
+          "x": -874,
+          "y": -96,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -31017,6 +31304,36 @@
           "x": 1790,
           "y": 435,
           "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 788,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd01",
+          "width": 116,
+          "x": 1375,
+          "y": -189,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 787,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd02",
+          "width": 816,
+          "x": 1491,
+          "y": -188,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -34925,7 +35242,7 @@
               },
               "parameters": [
                 "",
-                "RShift"
+                "Space"
               ],
               "subInstructions": []
             },
@@ -35558,6 +35875,17 @@
                 "VirtualControls"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "VirtualControls",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -35616,6 +35944,39 @@
             {
               "type": {
                 "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "PlatformBehavior::SimulateLeftKey"
               },
               "parameters": [
@@ -35650,6 +36011,39 @@
             {
               "type": {
                 "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "PlatformBehavior::SimulateRightKey"
               },
               "parameters": [
@@ -35678,9 +36072,56 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "jump.wav",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -36393,18 +36834,18 @@
       "behaviorsSharedData": []
     },
     {
-      "b": 247,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "End",
       "name": "End",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 208,
+      "r": 0,
       "standardSortMethod": false,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 244,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -36508,7 +36949,7 @@
           "name": "LeftButton",
           "width": 97.5489,
           "x": 31,
-          "y": 450,
+          "y": 480,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -36523,23 +36964,8 @@
           "name": "RightButton",
           "width": 94.1152,
           "x": 142,
-          "y": 453,
+          "y": 480,
           "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 202.235,
-          "layer": "GUI",
-          "locked": false,
-          "name": "ArrowButtonsBg",
-          "width": 202.235,
-          "x": 34,
-          "y": 389,
-          "zOrder": -10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -38011,14 +38437,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 224,
           "layer": "",
           "locked": false,
           "name": "Exit",
-          "width": 0,
-          "x": 3525,
-          "y": 467,
+          "width": 88,
+          "x": 3523,
+          "y": 335,
           "zOrder": 137,
           "numberProperties": [],
           "stringProperties": [],
@@ -38050,6 +38476,21 @@
           "x": 3688,
           "y": 534,
           "zOrder": 139,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 788,
+          "layer": "",
+          "locked": false,
+          "name": "BGObjEnd01",
+          "width": 116,
+          "x": -964,
+          "y": -83,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -41755,6 +42196,17 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"OpenLink\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -41837,7 +42289,7 @@
               },
               "parameters": [
                 "",
-                "RShift"
+                "Space"
               ],
               "subInstructions": []
             },
@@ -42470,35 +42922,15 @@
                 "VirtualControls"
               ],
               "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "DepartScene"
+                "value": "Delete"
               },
               "parameters": [
+                "VirtualControls",
                 ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TouchSimulateMouse"
-              },
-              "parameters": [
-                "",
-                "no"
               ],
               "subInstructions": []
             }
@@ -42525,6 +42957,39 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "yes"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -42562,6 +43027,39 @@
             {
               "type": {
                 "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player1_Jon",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player2_Bri",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "Player3_Baby",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "PlatformBehavior::SimulateRightKey"
               },
               "parameters": [
@@ -42590,9 +43088,56 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player1_Jon",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "jump.wav",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -42601,6 +43146,37 @@
               "parameters": [
                 "PlayerHitBox",
                 "PlatformerObject"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TouchSimulateMouse"
+              },
+              "parameters": [
+                "",
+                "no"
               ],
               "subInstructions": []
             }
@@ -42695,16 +43271,85 @@
                 "PlatformerObject"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "VirtualControls",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "UnPauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"OpenLink\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "3",
+                "\"OpenLink\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "LaunchFile"
+              },
+              "parameters": [
+                "http://tiny.cc/jon-bri-registry",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"OpenLink\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"OpenLink\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
